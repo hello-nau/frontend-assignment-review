@@ -1,0 +1,18 @@
+.welcome-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .welcome-container h1 {
+    color: #333;
+  }
+  
+  .welcome-container a {
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  

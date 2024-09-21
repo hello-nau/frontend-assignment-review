@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import WelcomePage from './pages/WelcomePage';
 import LoginPage from './pages/LoginPage';
 import HomePage from "./pages/HomePage";
@@ -7,11 +7,11 @@ import HomePage from "./pages/HomePage";
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={WelcomePage} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/home" component={HomePage} />
-      </Switch>
+      <Routes>
+      <Route path="/" element={<WelcomePage />} /> {/* Updated for React Router v6 */}
+        <Route path="/login" element={<LoginPage />} /> {/* Use 'element' instead of 'component' */}
+        <Route path="/home" element={<HomePage />} />
+      </Routes>
     </Router>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import './css/Home.css';
+import '../css/Home.css';
 
 function HomePage() {
     return (
