@@ -4,9 +4,11 @@ html {
 }
 
 body {
-  /* color: #333; */
-  color: green;
-  letter-spacing: 0.1em;
+  font-family: 'Arial', sans-serif;
+  background-color: #29232e;
+  color:#c5c0c0;
+  align-items: center;
+  /* height: 100vh; */
 }
 .login-container {
     display: flex;
