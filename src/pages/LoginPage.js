@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import api from '../api/api';
 import '../css/Login.css';
 
 function LoginPage() {
@@ -13,12 +14,12 @@ function LoginPage() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try{
-            const response = await axios.post('/api/login', {
+            const response = await api.post('/auth/login', {
                 username,
                 password,
             });
             if (response.status === 200) {
-                navigate.push('/home');
+                navigate('/home');
             }
         } catch(err) {
             setError("Login failed. Credentials are wrong.")
