@@ -3,48 +3,50 @@ body {
     background-color: #29232e;
     color:#c5c0c0;
     align-items: center;
-    /* height: 100vh; */
+    justify-content: center;
+    display: flex;
+    height: 100vh;
   }
+
 .home-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    min-height: 100vh;
+    gap:25px;
 }
-
-h1 {
-    margin-bottom: 20px;
+.featured-container {
+    width:100%;
+    max-width: 1000px;
+    display:flex;
+    justify-content: center;
+    gap:20px;
 }
 
 .home-featured {
+    width: 300px;
+    height: 300px;
+    background-color: #1f1a23;
+    border-radius: 20px;
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 20px;
-}
-
-.home-featured div {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
+    flex-direction: column; 
+    box-sizing: border-box;
     cursor: pointer;
 }
 
-.home-featured div:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.home-featured:hover {
+    background-color: #574a63;;
 }
 
 .dashboard-btn {
-    background-color: #007bff;
+    background-color: #0768cf;
     color: white;
-    padding: 15px 25px;
+    padding: 15px 55px;
     border: none;
     border-radius: 5px;
     cursor: pointer;

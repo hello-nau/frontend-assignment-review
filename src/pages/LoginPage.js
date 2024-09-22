@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import api from '../api/api';
 import '../css/Login.css';
+import Footer from './Footer';
 
 function LoginPage() {
     <h1>Login Page</h1>
@@ -27,10 +28,11 @@ function LoginPage() {
     };
 
     return (
-        <div className='"login-container'>
-            <h1>Login</h1>
+        <div className='"login-container' >
+        <div className='signin-container'>
+            <h1>Sign in</h1>
             {error && <p className='error-message'>{error}</p>}
-            <form onSubmit={handleLogin}>
+            <form className="form" onSubmit={handleLogin}>
                 <input
                 type="text"
                 value={username}
@@ -48,6 +50,8 @@ function LoginPage() {
                 <button type="submit">Login</button>
             </form>
         </div>
+        <Footer></Footer>
+       </div>
     );
 }
 export default LoginPage;

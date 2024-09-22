@@ -65,7 +65,7 @@ body {
     text-decoration: none;
     display: inline-block; 
     color: white;
-    background-color: #4a89cc; /* Bootstrap primary button color */
+    background-color: #4a89cc; 
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 18px;
@@ -74,5 +74,5 @@ body {
 }
 
 .welcome-container a:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3; 
 }
